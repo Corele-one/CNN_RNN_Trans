@@ -1,0 +1,11 @@
+import torch
+
+flag = torch.cuda.is_available()
+print(flag)
+
+ngpu = 1
+device = torch.device("cuda:0" if (torch.cuda.is_available() and ngpu > 0) else "cpu")
+print(device)
+print(torch.cuda.get_device_name(0))
+cuda_version = torch.version.cuda
+print(cuda_version)   
