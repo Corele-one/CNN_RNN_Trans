@@ -1,0 +1,20 @@
+__pycache__/
+*.py[cod]
+
+# Model weights and training checkpoints
+*.pth
+*.pt
+*.ckpt
+*.h5
+*.hdf5
+*.onnx
+*.safetensors
+*.pkl
+*.bin
+
+# Generated training outputs and local data artifacts
+run/
+Trans/data/dataset/
+Trans/tools/tokenizer/*.model
+Trans/tools/tokenizer/*.vocab
+.codex-objects/
